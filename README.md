@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/794177493.svg)](https://zenodo.org/doi/10.5281/zenodo.11094042)
+
 # Elastic Search
 
 ## Project overview
