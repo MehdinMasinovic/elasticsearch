@@ -1,6 +1,6 @@
 # Elastic Search
 
-## Exercise overview
+## Project overview
 
 This is the repository for a minimal producible solution of a elastic search setup. 
 
