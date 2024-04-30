@@ -1,102 +1,16 @@
-# GIR Exercise 2023W
+# Elastic Search
 
 ## Exercise overview
 
-This is the repository for the exercise of [Grundlagen des Information Retrieval (2023)](https://tiss.tuwien.ac.at/course/courseDetails.xhtml?dswid=1366&dsrid=63&courseNr=188977&semester=2023W). 
+This is the repository for a minimal producible solution of a elastic search setup. 
 
 The aim of this exercise is to improve a minimum viable search engine, such that it returns the right documents for predefined user queries.
-
-As part of this exercise, you are provided with an already working starter code along with tests that check how many of the predefined queries are already satisfied. These tests will also be used for grading your submission.
-
-The exercise is divided up into a pre-task and two milestones. The pre-task is only for linking you with your student id and checking whether you can push to GitHub correctly. In the 1st milestone your system will be tested only against milestone 1 queries, whereas in the 2nd milestone against all the queries.
 
 ## Data
 
 The data contains around 25.000 crawled Wikipedia pages of English-speaking movies from 2000 until today. The data has been collected by the code found in the [wiki](ir_exercise/wiki) folder.
 
-## Pre-task
-
-Your very first task is to clone the repository to your local machine, fill out your student id [here](ir_exercise/test/test_pre_task.py) and push it back to GitHub. There's a GitHub action attached to this repository that you can access on GitHub by clicking `Actions`. After pushing your filled out student id, the workflow run should be green. 
-
-## Queries
-
-During the exercise, you have to improve the starter system to satisfy the following queries.
-
-### Milestone 1
-
-```json
-[
-  { 
-      "query":  "Brad Pitt in Ancient Greece",
-      "expected_result":  "Troy (film)"
-  },
-  { 
-      "query": "Academy Award winning Tom Hangs on uninhabted island",
-      "expected_result": "Cast Away"
-  },
-  { 
-      "query": "RJ the racoon steals snack food",
-      "expected_result": "Over the Hedge (film)"
-  },
-  { 
-      "query": "2001 family comedy featuring St. Bernard",
-      "expected_result": "Beethoven's 4th (film)"
-  },
-  { 
-      "query": "Royal Ch",
-      "expected_result": "A Royal Christmas"
-  }
-]
-```
-
-### Milestone 2
-
-```json
-[
-  { 
-      "query":  "dive in sea resort",
-      "expected_result":  "The Red Sea Diving Resort"
-  },
-  { 
-      "query": "Mission Impossible 3",
-      "expected_result": "Mission: Impossible III"
-  },
-  { 
-      "query": "21",
-      "expected_result": "21 (2008 film)"
-  },
-  { 
-      "query": "failed suicide attempt leads to STEM implant",
-      "expected_result": "Upgrade (film)"
-  },
-  { 
-      "query": "biography featuring Edgar Ramirez, Demian Bichir",
-      "expected_result": "Che (2008 film)"
-  }
-]
-```
-
-## Grading
-
-Your work will be automatically graded by running the pre-defined tests.  
-Each test is worth 1 point and your score for both milestones is the percentage calculated from the tests that pass.  
-
-You can/should run the tests on your own to see how far you are:
-
-- Pre-task: `pytest ir_exercise/test/test_pre_task.py`
-- Milestone 1: `pytest ir_exercise/test/test_milestone_1.py` (only milestone 1 tests will be assessed)
-- Milestone 2: `pytest ir_exercise/test/test_milestone_*.py` (both milestone 1 & 2 tests will be assessed)
-
-❗ Do not modify the following files (they will be tested for changes) ❗
-- [milestone 1 tests](ir_exercise/test/test_milestone_1.py)
-- [milestone 2 tests](ir_exercise/test/test_milestone_2.py)
-- [the GitHub workflow file](.github/workflows/python-app.yml)
-
-## Deadlines
-
-- 24.10.23: Hand-out
-- 28.11.23 Milestone 1 Hand-in 
-- 16.01.24 Final Hand-in (Milestone 2)
+The sample-data provided in the ir_exercise directory shows the artificially created sample data.
 
 ## Start the search engine system
 
